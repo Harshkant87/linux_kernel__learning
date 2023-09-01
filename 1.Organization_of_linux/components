@@ -1,0 +1,14 @@
+1. Linux is all about user.
+2. Shell is the user interface to do something.
+3. Processes are method that do something.
+4. Kernel do all the processes and management.
+5. Two spaces - > user spaces and kernel spaces.
+6. kernel drivers are modular
+7. Kernel manages memory, schdule processes and manage drivers.
+
+
+-------Commands------
+modinfo <module_name> -> info about the module name
+lsmod -> all the loaded module list
+ls -l sd* -> files name with sd*
+
