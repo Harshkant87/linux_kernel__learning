@@ -11,4 +11,16 @@
 modinfo <module_name> -> info about the module name
 lsmod -> all the loaded module list
 ls -l sd* -> files name with sd*
+man glibc -> details about / manual of glibc
+---------------------------
+
+8. Linux is written in C
+9. shell is a place to execute user commands
+10. Linux is a file oriented operating system.
+11. cd /proc -> it means processes
+    ls -> all the processes
+    cd pid 
+    cd fd -> file descriptors
+
+
 
