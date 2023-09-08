@@ -2,3 +2,23 @@
 2. Linux code is written by open source community.
 3. Linus Torvald written founded linux.
 
+-----------------commands----------
+# compile C code
+    1. vi first.C -> edit first.c file
+    2. gcc first.c -o first -> compiling
+    3. ./first -> run
+
+-----------------------------------
+
+4. on complex programs, external files need to be included as well and the compiler line would become extrmely long
+5. To fix this, you can make Makefiles
+6. Makefile defines exactly what needs to be done in the copilation process.
+7. use make commands to run makefile command
+8. Simple files can be compiled straightforward.
+9. Complex program compile in multiple steps:
+    a. Object file cant run by itself it contains machine specific code.
+    b. These object files later are linked to libraries to compose and executable file.
+10. The linker component that links everything.
+
+
+
