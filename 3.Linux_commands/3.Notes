@@ -1,0 +1,22 @@
+1. Process cant access the kernel directly.
+2. System calls are used as an interface for processes to the kernel.
+3. glibc provides a library interface to use system calls from programs.
+4. common tasks like opening, listing, reading and writing to files all involve system calls.
+5. the fork() and exec() system calls determine how process starts.
+6. fork(): the kernel creates an almost identical copy of the current process and replaces that
+7. exec(): the kernel starts a program, which replaced the current process.
+8. system calls are provided by the kernel to give access to restricted parts.
+9. Library calls come from shared libraries and provide functionality.
+10. There is a large number of library calls, virtually unlimited because it all depends on the shared library that are loaded.
+
+
+----------------------------------
+Commands:
+
+man 2 intro -> for syscalls etc
+man 2 syscall -> manual of system calls
+man 3 intro -> for library calls
+
+------------------------------------
+
+
