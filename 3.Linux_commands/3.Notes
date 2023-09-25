@@ -9,6 +9,26 @@
 9. Library calls come from shared libraries and provide functionality.
 10. There is a large number of library calls, virtually unlimited because it all depends on the shared library that are loaded.
 
+------------User space vs Kernel Space---------------
+
+11. Hardware access is restricted to the kernel only.
+12. Kernel provides system calls for users and processes to access hardware.
+13. User space is memory that is allocated by the kernel for user processes.
+14. Several elements are all running in user space: 
+        * Network configuration
+        * Services like web server.
+        * Applications.
+        * User interface
+15. Users are created to assign permissions and limits entities on Linux. 
+16. Every process running on linux has owner. 
+
+------------------- Signals ----------------------
+
+17. A signal provides a software interrupt; it is a method to tell a process that it has to do something.
+18. Signals are strictly defined, see man 7 signal for complete overview
+19. Some signals (sigkill and sigterm) cant be ignored, others can be ignored.
+20. Many signals are specific to command.
+
 
 ----------------------------------
 Commands:
@@ -16,6 +36,9 @@ Commands:
 man 2 intro -> for syscalls etc
 man 2 syscall -> manual of system calls
 man 3 intro -> for library calls
+strace ls -> to trace system calls
+strace -c ls -> counters of specific system calls
+ltrace ls -> to trace library information
 
 ------------------------------------
 
