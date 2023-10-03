@@ -1,0 +1,14 @@
+------------------- BIOS and UEFI --------------------
+
+1. These are interfaces offered on PC platform to access disk.
+2. UEFI (Unified Extensible Firmware Interface) / EFI (Extensible Firmware Interface) were introduced to replace BIOS that has been introduced in 1981 and not seen major changes since.
+3. Both BIOS as UEFI were developed to provide a platform that sits between HW Firmware and OS.
+4. The most significant advantage of UEFI is its ability to boot from large disks when a GUID Partition Table (GPT) is used.
+
+------------- HOW BOOTLOADER LOADS THE KERNEL ----------
+
+5. The boot loader needs to find kernel and start it with the appropriate parameters.
+6. Bootloader needs to read the kernel somewhere from the disk, even if it doesn't have any kernel drivers yet.
+7. For this early access, disk FW provides Linear Block Access (LBA), which prvides a slow but uniform method to access disks.
+8. Most boot loaders have minimal filesystem knowledge, allowing them to read the kernel file from disk.
+
